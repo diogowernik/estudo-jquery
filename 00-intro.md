@@ -28,25 +28,25 @@
 
 5) Seletor abaixo
 
-    $("#navbar-right li");
-    $("#navbar-right li:first");
-    $("#navbar-right li:last");
+    $(".navbar-right li");
+    $(".navbar-right li:first");
+    $(".navbar-right li:last");
 
 Pares e impares (inicia no [0])
 
-    $("#navbar-right li:odd");
-    $("#navbar-right li:even");
+    $(".navbar-right li:odd");
+    $(".navbar-right li:even");
 
 6) selecionar filhos diretos x selecionar todos filhos e netos
 
 Todos
 
-    $("#navbar-right li");
+    $(".navbar-right li");
 
 Apenas filhos diretos
 
-    $("#navbar-right > li");
+    $(".navbar-right > li");
 
 7) Selecionar elemento multiplos
 
-    $("#navbar-right, .social");
+    $(".navbar-right, .social");
