@@ -17,12 +17,7 @@ Adicionando tags html
 var name = $('<p>João</p>');
 ```
 
-### Anexar (append)
-
-append()
-prepend()
-after()
-before()
+#### Ações
 
 Exemplo:
 
@@ -52,7 +47,6 @@ $('.card').before(name);
 var name = $('<p>João</p>');
 $('.card').before(name);
 
-
 <li class="card">
     <h2></h2>
     <button>
@@ -72,3 +66,116 @@ $('.card').prepend(name);
     <button>
 </li>
 ```
+
+**append()**
+
+```javascript
+var name = $('<p>João</p>');
+$('.card').append(name);
+
+<li class="card">
+    <h2></h2>
+    <button>
+    <p>João<p>
+</li>
+```
+
+Is possible also to use like:
+
+**appendTo()**
+
+```javascript
+name.appendTo($('.card'));
+```
+
+**insertAfter()**
+
+```javascript
+name.insertAfter($('.card'));
+```
+
+**prependTo()**
+
+```javascript
+name.prependTo($('.card'));
+```
+
+**insertBefore()**
+
+```javascript
+name.prependTo($('.card'));
+```
+
+#### Remove, Hide
+
+**remove()**
+
+```javascript
+var name = $('<p>João</p>');
+$('.card').append(name);
+
+$('button').remove();
+
+<li class="card">
+    <h2></h2>
+    
+    <p>João<p>
+</li>
+```
+
+
+#### Algo acontece quando o button é clicado
+
+```javascript
+$('button').on('click', function() {
+
+
+
+});
+```
+
+Exemplo:
+
+```javascript
+$('button').on('click', function() {
+
+    var name = $('<p>João</p>');
+    $('.card').append(name);
+    $('button').remove();
+
+});
+```
+
+Quando clicar no botão... acontece:
+
+variavel criada: "<p>João</p>"
+
+nome adicionado ao ".card"
+
+"button" removido
+
+
+#### Usando o (this)
+
+Fica:
+
+
+```javascript
+$('button').on('click', function() {
+
+    var name = $('<p>João</p>');
+    $('this').closest(.card).append(name);
+    $('this').remove();
+
+});
+```
+
+Traduzindo:
+
+Cria a variável **<p>João</p>
+
+Adiciona a variável no **card** pai do **button**, 
+
+ou seja o (this) aqui é o **button**.
+
+remove o **button**
