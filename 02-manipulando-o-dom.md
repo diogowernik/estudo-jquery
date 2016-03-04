@@ -26,7 +26,7 @@ before()
 
 Exemplo:
 
-```html
+```javascript
 <li class="card">
     <h2></h2>
     <button>
@@ -38,13 +38,13 @@ Exemplo:
 ```javascript
 var name = $('<p>João</p>');
 $('.card').before(name);
-```
+
 <p>João<p>
 <li class="card">
     <h2></h2>
     <button>
 </li>
-
+```
 
 **after()**
 
@@ -65,11 +65,10 @@ $('.card').before(name);
 ```javascript
 var name = $('<p>João</p>');
 $('.card').prepend(name);
-```
-
 
 <li class="card">
     <p>João<p>
     <h2></h2>
     <button>
 </li>
+```
