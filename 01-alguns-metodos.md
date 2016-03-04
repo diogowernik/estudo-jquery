@@ -25,6 +25,10 @@ parent()
 
 children()
 
+Apenas filhos diretos
+
+    $(".navbar-right > li");
+
     $(".navbar-right").children("li");
     
 
