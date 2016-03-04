@@ -106,7 +106,7 @@ name.prependTo($('.card'));
 name.prependTo($('.card'));
 ```
 
-#### Remove, Hide
+#### Remove
 
 **remove()**
 
