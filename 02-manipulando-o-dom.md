@@ -148,11 +148,11 @@ $('button').on('click', function() {
 
 Quando clicar no botão... acontece:
 
-variavel criada: "<p>João</p>"
+variavel criada: **João**
 
-nome adicionado ao ".card"
+nome adicionado ao **.card**
 
-"button" removido
+**button** removido
 
 
 #### Usando o (this)
@@ -172,7 +172,7 @@ $('button').on('click', function() {
 
 Traduzindo:
 
-Cria a variável **<p>João</p>
+Cria a variável **João**
 
 Adiciona a variável no **card** pai do **button**, 
 
